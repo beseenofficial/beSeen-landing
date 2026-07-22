@@ -2,7 +2,7 @@
   "name": "beseen-landing-page",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@11.9.0",
+  "packageManager": "npm@10.9.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
