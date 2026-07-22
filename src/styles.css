@@ -105,25 +105,18 @@ p {
 
 .brand img {
   position: absolute;
-
   width: 100%;
   height: 100%;
   max-width: none;
 }
 
-.beta-label,
 .section-kicker,
 .eyebrow,
 .micro-label {
   color: var(--blue);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 800;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
-}
-
-.beta-label {
-  color: #59647c;
 }
 
 .hero {
@@ -227,7 +220,7 @@ p {
   overflow: hidden;
   border: 2px solid #d5e4e9;
   border-radius: 40px;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--aqua);
 }
 
 .message-card,
@@ -861,13 +854,21 @@ p {
 }
 
 @keyframes backdrop-enter {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes backdrop-exit {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .waitlist-modal h2 {
@@ -977,22 +978,9 @@ p {
     padding-top: 0;
   }
 
-  .site-header .brand {
-    width: 132px;
-    height: 43px;
-  }
-
   .site-header .brand img {
-    top: -22px;
-    left: -20px;
-    width: 174px;
-    height: 87px;
-  }
-
-  .beta-label {
-    max-width: 120px;
-    text-align: right;
-    font-size: 9px;
+    width: 80%;
+    height: auto;
   }
 
   .hero {
