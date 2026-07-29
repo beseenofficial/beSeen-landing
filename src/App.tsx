@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { AccessBanner } from './components/AccessBanner';
 import { Benefits } from './components/Benefits';
 import { Faq } from './components/Faq';
@@ -7,11 +6,9 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { HowItWorks } from './components/HowItWorks';
 import { Outcome } from './components/Outcome';
-import { WaitlistModal } from './components/WaitlistModal';
 import { useReveal } from './hooks/useReveal';
 
 export function App() {
-  const [waitlistOpen, setWaitlistOpen] = useState(false);
   useReveal();
 
   return (
@@ -19,7 +16,7 @@ export function App() {
       <div className="page-shell">
         <div className="top-section">
           <Header />
-          <Hero onJoin={() => setWaitlistOpen(true)} />
+          <Hero />
         </div>
         <main>
           <Outcome />
@@ -28,12 +25,8 @@ export function App() {
           <AccessBanner />
           <Faq />
         </main>
-        <Footer onJoin={() => setWaitlistOpen(true)} />
+        <Footer />
       </div>
-      <WaitlistModal
-        open={waitlistOpen}
-        onClose={() => setWaitlistOpen(false)}
-      />
     </>
   );
 }

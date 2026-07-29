@@ -1,10 +1,6 @@
 import { EscrowDemo } from './EscrowDemo';
 
-type HeroProps = {
-  onJoin: () => void;
-};
-
-export function Hero({ onJoin }: HeroProps) {
+export function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero__copy" data-reveal>
@@ -24,13 +20,12 @@ export function Hero({ onJoin }: HeroProps) {
           they earn it. If they do not, every cent comes back automatically.
         </p>
         <div className="hero__actions">
-          <button
+          <a
             className="button button--primary"
-            type="button"
-            onClick={onJoin}
+            href="https://app.beseen.fi"
           >
-            Join Waitlist
-          </button>
+            Launch App
+          </a>
           <div className="hero__network">
             <span>Built on</span>
             <img src="/assets/Stellar Logo Final Black RGB.png" alt="Stellar" />

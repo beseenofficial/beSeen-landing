@@ -184,11 +184,17 @@ p {
 }
 
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   min-width: 190px;
   min-height: 58px;
   padding: 15px 30px;
   border: 0;
   border-radius: 999px;
+  text-align: center;
+  text-decoration: none;
   font-size: 14px;
   font-weight: 800;
   cursor: pointer;
