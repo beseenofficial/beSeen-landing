@@ -45,3 +45,7 @@ implementation-*.png
 .DS_Store
 Thumbs.db
 Desktop.ini
+design-qa.md
+DESIGN.md
+PRODUCT.md
+.impeccable
