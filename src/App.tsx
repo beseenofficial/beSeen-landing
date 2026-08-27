@@ -6,11 +6,8 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { HowItWorks } from './components/HowItWorks';
 import { Outcome } from './components/Outcome';
-import { useReveal } from './hooks/useReveal';
 
 export function App() {
-  useReveal();
-
   return (
     <>
       <div className="page-shell">
@@ -19,8 +16,8 @@ export function App() {
           <Hero />
         </div>
         <main>
-          <Outcome />
           <HowItWorks />
+          <Outcome />
           <Benefits />
           <AccessBanner />
           <Faq />

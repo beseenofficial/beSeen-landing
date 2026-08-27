@@ -1,26 +1,23 @@
-const benefits = [
-  { label: "For users", line: "Choose the value of your request.", strong: "Never lose money to silence.", color: "blue" },
-  { label: "For creators", line: "A paid inbox ranked by real value.", strong: "No calls, schedules, or obligation.", color: "coral" },
-];
-
 export function Benefits() {
   return (
-    <section className="benefits section section--white">
-      <div className="section-heading" data-reveal>
-        <p className="section-kicker">Built for better attention</p>
-        <h2>Less noise. Clearer value.</h2>
+    <section className="recipients section" id="recipients">
+      <div className="recipients__copy">
+        <h2>A better inbox for people in demand.</h2>
+        <p>Creators, founders and experts see the value and context of every request before deciding whether it deserves a reply.</p>
+        <ul><li>Review before responding</li><li>Reply to claim the bounty</li><li>Keep control with Aura</li></ul>
       </div>
-      <div className="benefit-grid">
-        {benefits.map((benefit) => (
-          <article className="benefit" key={benefit.label} data-reveal>
-            <span className={`benefit__line benefit__line--${benefit.color}`} />
-            <div>
-              <h3>{benefit.label}</h3>
-              <p>{benefit.line}</p>
-              <strong>{benefit.strong}</strong>
-            </div>
-          </article>
-        ))}
+      <div className="recipient-inbox recipient-inbox--video">
+        <video
+          aria-label="BeSeen priority inbox showing incoming bounty requests"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+        >
+          <source src="/videos/beseen-inbox-loop.webm" type="video/webm" />
+          Your browser cannot play this video. <a href="/videos/beseen-inbox-loop.webm">Download the inbox video.</a>
+        </video>
       </div>
     </section>
   );

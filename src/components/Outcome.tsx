@@ -1,23 +1,27 @@
 export function Outcome() {
   return (
-    <section className="outcome section section--white">
-      <div className="outcome__intro" data-reveal>
-        <p className="section-kicker">One message · one guaranteed resolution</p>
-        <h2>Reply or refund.</h2>
-        <p>Creators choose whether to respond.<br />Escrow guarantees what happens next.</p>
+    <section className="outcome section">
+      <div className="outcome__heading"><h2>Attention stays optional.<br />Settlement does not.</h2><p>The recipient decides whether to respond. The contract decides what happens to the bounty.</p></div>
+      <div className="outcome__cards">
+        <article className="outcome-card outcome-card--payout">
+          <div className="outcome-card__copy">
+            <h3>Reply received.<br />Release the bounty.</h3>
+            <p>A valid reply makes the attached bounty ready to claim for the recipient.</p>
+          </div>
+          <div className="outcome-card__footer">
+            <strong>Payout</strong>
+          </div>
+        </article>
+        <article className="outcome-card outcome-card--refund">
+          <div className="outcome-card__copy">
+            <h3>Deadline reached.<br />Return every unit.</h3>
+            <p>No reply marks the offer expired and returns the full bounty automatically.</p>
+          </div>
+          <div className="outcome-card__footer">
+            <strong>Refund</strong>
+          </div>
+        </article>
       </div>
-      <article className="outcome-card outcome-card--paid" data-reveal>
-        <span className="micro-label">Reply received</span>
-        <h3>Creator gets paid</h3>
-        <p>The bounty is released<br />from escrow.</p>
-      </article>
-      <article className="outcome-card outcome-card--refund" data-reveal>
-        <span className="micro-label">No reply</span>
-        <strong className="refund-value">100% back</strong>
-        <p>Every cent returns automatically<br />when the deadline expires.</p>
-        <small>Automatic · executed by smart contract</small>
-        <span className="progress-rule" aria-hidden="true" />
-      </article>
     </section>
   );
 }

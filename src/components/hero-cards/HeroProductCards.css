@@ -1,0 +1,16 @@
+.hero-product-cards { position: absolute; z-index: 0; inset: 0; pointer-events: none; }
+.hero-product-cards__item { position: absolute; scale: .88; will-change: transform; }
+.hero-product-cards__item--add { top: 12%; left: 2%; transform: rotate(-1.2deg); }
+.hero-product-cards__item--message { top: 11%; right: 3.4%; transform: rotate(1deg); }
+.hero-product-cards__item--inbox { right: 4%; bottom: 14%; transform: rotate(-1deg); }
+.hero-product-cards__item--add { transform-origin: top left; }
+.hero-product-cards__item--message { transform-origin: top right; }
+.hero-product-cards__item--inbox { transform-origin: bottom right; }
+
+@media (max-width: 1439px) {
+  .hero-product-cards { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-product-cards__item { will-change: auto; }
+}

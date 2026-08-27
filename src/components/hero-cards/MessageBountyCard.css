@@ -1,0 +1,10 @@
+.message-bounty-card { width: 244px; overflow: hidden; border-radius: 16px; color: #fff; background: #1045f5; box-shadow: 0 18px 42px rgba(16,69,245,.18); font-family: 'Outfit', sans-serif; }
+.message-bounty-card__message { padding: 19px 21px 17px; font-size: 14px; font-weight: 400; line-height: 1.55; text-align: left; }
+.message-bounty-card__details { min-height: 72px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 13px 17px; border-radius: 16px 16px 0 0; color: #0b0b3f; background: #fff; }
+.message-bounty-card__value { display: flex; align-items: center; gap: 9px; padding-right: 13px; }
+.message-bounty-card__value svg { width: 30px; height: 30px; flex: 0 0 auto; color: #1465c0; }
+.message-bounty-card__value strong { color: #505775; font-size: 11px; line-height: 1.25; }
+.message-bounty-card__deadline { padding-left: 16px; border-left: 1px solid #d7e5ea; text-align: left; }
+.message-bounty-card__deadline span, .message-bounty-card__deadline strong { display: block; }
+.message-bounty-card__deadline span { color: #505775; font-size: 9px; }
+.message-bounty-card__deadline strong { margin-top: 2px; font-size: 18px; line-height: 1; }

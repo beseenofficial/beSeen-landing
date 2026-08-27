@@ -1,0 +1,17 @@
+.add-bounty-card { width: 270px; padding: 16px 14px 13px; border-radius: 16px; color: #0b0b3f; background: #fff; box-shadow: 0 18px 42px rgba(11,11,63,.14); font-family: 'Outfit', sans-serif; }
+.add-bounty-card__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; }
+.add-bounty-card__header > span, .add-bounty-card__header b { display: flex; align-items: center; }
+.add-bounty-card__header > span { gap: 8px; font-size: 13px; }
+.add-bounty-card__header > span svg { width: 17px; height: 17px; color: #b06a00; }
+.add-bounty-card__header b { gap: 5px; padding: 6px 9px; border-radius: 10px; color: #1045f5; background: #eef2ff; font-size: 10px; }
+.add-bounty-card__header b svg { width: 14px; height: 14px; }
+.add-bounty-card__row { display: grid; grid-template-columns: 86px 1fr; align-items: center; gap: 12px; margin-top: 9px; }
+.add-bounty-card__label { color: #505775; font-size: 10px; font-weight: 700; }
+.add-bounty-card__label--icon { display: flex; align-items: center; gap: 6px; }
+.add-bounty-card__label--icon svg { width: 14px; height: 14px; }
+.add-bounty-card__choices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.add-bounty-card__choices > span { min-height: 29px; display: flex; align-items: center; justify-content: center; gap: 3px; border: 1px solid #d7e5ea; border-radius: 9px; color: #505775; font-size: 10px; font-weight: 700; }
+.add-bounty-card__choices > span svg { width: 11px; height: 11px; }
+.add-bounty-card__choices > .is-selected { border-color: #9bb4ff; color: #1045f5; background: #edf1ff; }
+.add-bounty-card__action { min-height: 36px; margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 7px; border-radius: 11px; color: #fff; background: #1045f5; font-size: 12px; font-weight: 700; }
+.add-bounty-card__action svg { width: 16px; height: 16px; }
