@@ -1,15 +1,22 @@
 import { PaperPlaneTiltIcon as PaperPlaneTilt } from '@phosphor-icons/react/PaperPlaneTilt';
+import { DecorativeVideo } from './DecorativeVideo';
 import { HeroProductCards } from './hero-cards/HeroProductCards';
 
 export function Hero() {
   return (
     <section className="hero" id="top">
-      <img
+      <DecorativeVideo
         className="hero__background"
-        src="/assets/interface/hero-gradient.png"
-        alt=""
         aria-hidden="true"
-      />
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        poster="/assets/interface/hero-gradient.jpg"
+      >
+        <source src="/videos/hero-background.webm" type="video/webm" />
+      </DecorativeVideo>
       <HeroProductCards />
       <div className="hero__content">
         <h1>
@@ -29,8 +36,7 @@ export function Hero() {
           </a>
           <a
             href="https://app.beseen.fi/discover"
-            className="link"
-            style={{ textDecoration: 'none' }}
+            className="button button--secondary"
           >
             Discover People
           </a>

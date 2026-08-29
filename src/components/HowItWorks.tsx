@@ -1,23 +1,26 @@
 import { ArrowRight } from '@phosphor-icons/react';
+import { ConnectedHub } from './ConnectedHub';
+import { DecorativeVideo } from './DecorativeVideo';
 import { EscrowDemo } from './EscrowDemo';
 
 function MessageStepsVideo() {
   return (
     <div className="product-video product-video--handoff">
-      <video
+      <DecorativeVideo
         aria-label="BeSeen message flow: compose a request, add a bounty, and send it"
         autoPlay
+        deferUntilNearViewport
         loop
         muted
         playsInline
-        preload="auto"
+        preload="none"
       >
         <source src="/videos/beseen-message-steps.webm" type="video/webm" />
         Your browser cannot play this video.{' '}
         <a href="/videos/beseen-message-steps-web.webm">
           Download the BeSeen message flow video.
         </a>
-      </video>
+      </DecorativeVideo>
     </div>
   );
 }
@@ -25,13 +28,14 @@ function MessageStepsVideo() {
 function OutcomeStatusVideo() {
   return (
     <div className="product-video product-video--outcome">
-      <video
+      <DecorativeVideo
         aria-label="BeSeen bounty status changing between escrow, payout, and refund"
         autoPlay
+        deferUntilNearViewport
         loop
         muted
         playsInline
-        preload="auto"
+        preload="none"
       >
         <source
           src="/videos/beseen-bounty-status-loop-alpha.webm"
@@ -41,7 +45,7 @@ function OutcomeStatusVideo() {
         <a href="/videos/beseen-bounty-status-loop-alpha.webm">
           Download the bounty status video.
         </a>
-      </video>
+      </DecorativeVideo>
     </div>
   );
 }
@@ -76,7 +80,7 @@ export function HowItWorks() {
             <p>The bounty is locked when you send—not spent.</p>
           </div>
           <div className="bounty-visual">
-            <img src="/assets/interface/bounty-ripple.svg" alt="" />
+            <img src="/assets/interface/bounty-ripple.svg" alt="" draggable={false} />
             <strong>25</strong>
             <span>USDC</span>
             <small>Available bounty</small>
@@ -103,11 +107,7 @@ export function HowItWorks() {
             <h3>Access with history.</h3>
             <p>Aura connects early supporters and high-demand recipients.</p>
           </div>
-          <img
-            className="aura-asset"
-            src="/assets/interface/aura-ripple.svg"
-            alt=""
-          />
+          <ConnectedHub />
           <a className="aura-discover" href="https://app.beseen.fi/discover">
             <span>Discover people</span>
             <ArrowRight aria-hidden="true" weight="bold" />
